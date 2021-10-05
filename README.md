@@ -5,9 +5,7 @@ How to Use gosumemory : https://github.com/l3lackShark/gosumemory
 
 
 
-Made By **2ky(@s2skky)**
-
-Thanks **B-Force(inteliser)** for help me to make'simple_leaderboard'/
+Made By **2ky(@s2skky)** and Thanks **B-Force(inteliser)** for help me to make'simple_leaderboard'
 
 ## Current released theme
 

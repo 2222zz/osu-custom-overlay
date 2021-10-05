@@ -1,2 +1,2 @@
 # gosumemory-theme
-ddd
+install gosumemory : https://github.com/l3lackShark/gosumemory

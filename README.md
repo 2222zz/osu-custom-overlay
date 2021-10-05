@@ -1,7 +1,13 @@
 # gosumemory-theme in mania mode
 This is only working in mania mode. It doesn't work normally in other modes
 
-install gosumemory : https://github.com/l3lackShark/gosumemory
+How to Use gosumemory : https://github.com/l3lackShark/gosumemory
+
+
+
+Made By **2ky(@s2skky)**
+
+Thanks **B-Force(inteliser)** for help me to make'simple_leaderboard'/
 
 ## Current released theme
 
@@ -35,12 +41,16 @@ install gosumemory : https://github.com/l3lackShark/gosumemory
   
   #### Screenshot:
   
+> - size : FHD->280x1080,  QHD->360x1440
+  
   ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/62880311/136027869-3c7f2a62-c73f-446e-963f-0e7034ae5ae8.gif)
 
   #### Features : 
 > - It predicts the score in real-time and shows the real-time ranking.
 > - 2 themes, including and without profile photos.
 > - When beatmap is pending state(without global ranking), it shows the local ranking automatically.
+> - For using this overlay, you must have Osu! APIv1 key and Osu! UID.
+> - How to get API : https://old.ppy.sh/p/api or http://osu.ppy.sh/p/api 
   
   #### Not Support :
 > - ScoreV2 mod and Not Submited & deleted maps.

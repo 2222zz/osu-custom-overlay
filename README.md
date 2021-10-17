@@ -62,3 +62,6 @@ Made By **2ky(@s2skky)** and Thanks **B-Force(inteliser)** for help me to make's
 
 > #### **2021-10-17*
 > - change folder name.
+
+> #### **2021-10-18*
+> - add option(to eliminate the background behind leaderboard) in 'maina-simple-leaderboard. 

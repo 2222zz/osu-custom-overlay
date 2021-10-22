@@ -1,5 +1,5 @@
 # CustomOverlay in gousumemory
-This is made to be used in mania, and it may not work on other modes.
+**This is made to be used in mania, and it may not work on other modes.**
 
 How to use gosumemory : https://github.com/l3lackShark/gosumemory
 

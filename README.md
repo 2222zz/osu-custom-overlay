@@ -62,4 +62,4 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 > - Changed folder name.
 
 > #### **2021-10-18*
-> - Added option to remove background behind leaderboard in simple-leadeboard.
+> - Added option to remove background behind leaderboard in simple-leaderboard.

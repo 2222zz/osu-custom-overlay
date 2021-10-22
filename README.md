@@ -56,7 +56,7 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 ## ChangeLog:
 > #### **2021-10-05*
 > - Released simple-overlay and simple-leaderboard. 
-> - Hotfix for simple_overlay.
+> - Hotfix for simple-overlay.
 
 > #### **2021-10-17*
 > - Changed folder name.

@@ -1,4 +1,4 @@
-# gosumemory-theme in mania mode
+# CustomOverlay in gousumemory
 This is made to be used in mania, and it may not work on other modes.
 
 How to use gosumemory : https://github.com/l3lackShark/gosumemory
@@ -16,7 +16,6 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   
 >  - Customizable Colors and Contents.
 >  - Size : FHD->520x240,  QHD -> 700x330
->  - Screenshot : 
 >  
 >  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/62880311/136022486-44d7bde7-0683-42fe-a5db-ef5804919994.gif)
 >
@@ -25,7 +24,6 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   
 >  - Non-customizable
 >  - Size : FHD->280x280,  QHD -> 375x375
->  - Screenshot : 
 >
 >![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/62880311/136022501-cccd83a6-82f3-4bb8-91e1-459e28327c70.gif)
 >

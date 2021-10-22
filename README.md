@@ -14,7 +14,7 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   
   #### normal mode : 
   
->  - Possible Customizable Colors and Contents.
+>  - Customizable Colors and Contents.
 >  - Size : FHD->520x240,  QHD -> 700x330
 >  - Screenshot : 
 >  
@@ -47,7 +47,7 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 > - It predicts your score in real-time and shows your real-time ranking.
 > - 2 themes, with and without avatars.
 > - When the beatmap does not have global leaderboards, local scores will be shown automatically.
-> - To use this overlay you must have Osu! APIv1 key and Osu! UID.
+> - To use this overlay you should be osu! APIv1 key and Osu! UID.
 > - API Links : https://old.ppy.sh/p/api or http://osu.ppy.sh/p/api 
   
   #### Unsupported :

@@ -55,11 +55,11 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 
 ## ChangeLog:
 > #### **2021-10-05*
-> - Released 'simple_overlay', 'simple_leaderboard' first time.
-> - Hot fixed in 'simple_overlay'.
+> - Released simple-overlay and simple-leaderboard. 
+> - Hotfix for simple_overlay.
 
 > #### **2021-10-17*
-> - change folder name.
+> - Changed folder name.
 
 > #### **2021-10-18*
-> - add option(to eliminate the background behind leaderboard) in 'maina-simple-leaderboard. 
+> - Added option to remove background behind leaderboard in simple-leadeboard.

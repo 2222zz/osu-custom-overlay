@@ -1,11 +1,11 @@
 # gosumemory-theme in mania mode
-This is only working in mania mode. It doesn't work normally in other modes
+This is made to be used in mania, and it may not work on other modes.
 
-How to Use gosumemory : https://github.com/l3lackShark/gosumemory
+How to use gosumemory : https://github.com/l3lackShark/gosumemory
 
+Made by **2ky (@s2skky)** and thanks to **B-Force (inteliser)** for helping me to make "simple_leaderboard"
 
-
-Made By **2ky(@s2skky)** and Thanks **B-Force(inteliser)** for help me to make'simple_leaderboard'
+Special thanks to **riunosk** for polishing up 'README.md'.
 
 ## Current released theme
 
@@ -14,24 +14,24 @@ Made By **2ky(@s2skky)** and Thanks **B-Force(inteliser)** for help me to make's
   
   #### normal mode : 
   
->  - possible custom color, custom contents.
->  - size : FHD->520x240,  QHD -> 700x330
->  - screenshot : 
+>  - Possible Customizable Colors and Contents.
+>  - Size : FHD->520x240,  QHD -> 700x330
+>  - Screenshot : 
 >  
 >  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/62880311/136022486-44d7bde7-0683-42fe-a5db-ef5804919994.gif)
 >
 >  
   #### simple mode : 
   
->  - no custom
->  - size : FHD->280x280,  QHD -> 375x375
->  - screenshot : 
+>  - Non-customizable
+>  - Size : FHD->280x280,  QHD -> 375x375
+>  - Screenshot : 
 >
 >![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/62880311/136022501-cccd83a6-82f3-4bb8-91e1-459e28327c70.gif)
 >
   #### Features :
->  - This overlay includes a setting program, so you can set it up conveniently.
->  - Support QHD, FHD resolution.
+>  - This overlay includes a setting program so you can set it up conveniently.
+>  - Supports QHD and FHD resolutions.
 </details>
   
 ### simple-leaderboard
@@ -44,15 +44,15 @@ Made By **2ky(@s2skky)** and Thanks **B-Force(inteliser)** for help me to make's
   ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/62880311/136027869-3c7f2a62-c73f-446e-963f-0e7034ae5ae8.gif)
 
   #### Features : 
-> - It predicts the score in real-time and shows the real-time ranking.
-> - 2 themes, including and without profile photos.
-> - When beatmap is pending state(without global ranking), it shows the local ranking automatically.
-> - For using this overlay, you must have Osu! APIv1 key and Osu! UID.
-> - How to get API : https://old.ppy.sh/p/api or http://osu.ppy.sh/p/api 
+> - It predicts your score in real-time and shows your real-time ranking.
+> - 2 themes, with and without avatars.
+> - When the beatmap does not have global leaderboards, local scores will be shown automatically.
+> - To use this overlay you must have Osu! APIv1 key and Osu! UID.
+> - API Links : https://old.ppy.sh/p/api or http://osu.ppy.sh/p/api 
   
-  #### Not Support :
-> - ScoreV2 mod and Not Submited & deleted maps.
-> - Some other maps don't work for unknown reasons.
+  #### Unsupported :
+> - ScoreV2 mod and unsubmitted/deleted maps.
+> - Some maps may not work for unknown reasons.
 </details>
 
 ## ChangeLog:

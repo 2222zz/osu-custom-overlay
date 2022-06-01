@@ -1,0 +1,37 @@
+/* made by 2ky(@s2skky) */
+
+@font-face {
+    font-family: "Google Sans Bold";
+    src: url("../fonts/GoogleSans-Bold.otf");
+}
+@font-face {
+    font-family: "TOMMY";
+    src: url("../fonts/MADETOMMY.otf");
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#section{
+    transition: ease-in-out 500ms;
+    width : 400px;
+    height : 400px;
+}
+#chart{
+    position: absolute;
+    top: -10px;
+    width: 400px;
+    height: 400px;
+}
+#nps{
+    font-family: TOMMY;
+    font-size: 24pt;
+    color: white;
+    text-align: right;
+    margin-right: 40px;
+}

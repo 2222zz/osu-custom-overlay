@@ -54,6 +54,10 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 </details>
 
 ## ChangeLog:
+> #### **2022-06-01*
+> - Inital commit.
+> - Add 3 themes overlay.
+
 > #### **2021-10-05*
 > - Released simple-overlay and simple-leaderboard. 
 > - Hotfix for simple-overlay.

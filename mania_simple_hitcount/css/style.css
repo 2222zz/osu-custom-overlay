@@ -1,0 +1,151 @@
+/* made by 2ky(@s2skky) */
+
+@font-face {
+    font-family: "Google Sans Bold";
+    src: url("../fonts/GoogleSans-Bold.otf");
+}
+@font-face {
+    font-family: "TOMMY";
+    src: url("../fonts/MADETOMMY.otf");
+}
+.odometer.odometer-auto-theme {
+    font-family: "GothicB", Helvetica, sans-serif !important;
+    font-weight: 900px !important;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#section_3{
+    transition: ease-in-out 500ms;
+}
+#hitcount_box{
+    position: absolute;
+    top:10px;
+    left:10px;
+    width:200px;
+    height:270px;
+    line-height: 35px;
+    background-color: #262626;
+}
+#textBox{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+#textH300g,
+#textH300,
+#textH200,
+#textH100,
+#textH50,
+#textMiss,
+#textUr{
+   font-family: TOMMY;
+   font-size: 20pt;
+   transition: ease-in-out 100ms;
+   text-align: left;
+   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000; 
+}
+#textH300g{
+    color:azure;
+}
+#textH300{
+    color:orange;
+}
+#textH200{
+    color:forestgreen;
+}
+#textH100{
+    color:dodgerblue;
+}
+#textH50{
+    color:hotpink;
+}
+#textMiss{
+    color:crimson;
+}
+#textUr{
+    color:white;
+}
+
+#countBox{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+#h300g,
+#h300,
+#h200,
+#h100,
+#h50,
+#miss,
+#ur{
+   position:absolute;
+   right: 2px;
+   font-family: TOMMY;
+   font-weight: bold;
+   font-size: 20pt;
+    text-align: right;
+    text-shadow: -1px 1px 2px #000, 1px 1px 2px #000; 
+    
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+    
+    color: #eaeaea;
+}
+#h300g{
+    top:4px;
+}
+#h300{
+    top: 39px;
+}
+#h200{
+    top: 74px;
+}
+#h100{
+    top: 109px;
+}
+#h50{
+    top: 144px;
+}
+#miss{
+    top: 179px;
+}
+#ur{
+    top: 214px;
+}
+
+#bar_box{
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    top: 265px;
+    background-color:dimgray;
+    overflow:hidden;
+    display:flex;
+    
+}
+#bar_h300g,
+#bar_h300,
+#bar_h200,
+#bar_bad{
+    height: 5px;
+}
+#bar_h300g{
+    background-color: azure;
+}
+#bar_h300{
+    background-color: orange;
+}
+#bar_h200{
+    background-color: forestgreen;
+}
+#bar_bad{
+    background-color: crimson;
+}

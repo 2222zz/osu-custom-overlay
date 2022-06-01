@@ -1,0 +1,13 @@
+{
+	"background" : "gray",
+	"l_b" : 0,
+	"l_g" : 140,
+	"l_r" : 255,
+	"left_box" : "star",
+	"r_b" : 255,
+	"r_g" : 191,
+	"r_r" : 0,
+	"right_box" : "ur",
+	"simple" : "off",
+	"subtitle" : "mapper"
+}

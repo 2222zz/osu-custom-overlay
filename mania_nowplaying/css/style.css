@@ -1,0 +1,150 @@
+/*made by 2ky(@s2skky)*/
+
+@font-face {
+    font-family: "Google Sans Bold";
+    src: url("../fonts/GoogleSans-Bold.otf");
+}
+@font-face {
+    font-family: "TOMMY";
+    src: url("../fonts/MADETOMMY.otf");
+}
+.odometer.odometer-auto-theme {
+    font-family: "GothicB", Helvetica, sans-serif !important;
+    font-weight: 900px !important;
+}
+
+body,
+html {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#section_2{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    transition: ease-in-out 500ms;
+}
+#nowPlayingBox{
+    position: absolute;
+    width: 480px;
+    height: 170px;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    border-radius: 10px;
+    box-shadow: 0 5px 9px black;
+    transform: skew(-8deg);   
+}
+#mask_box{
+    position: absolute;
+    width:400px;
+    height: 170px;
+    left:80px;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    box-shadow: 9px 5px 9px black;
+}
+#map_pic{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 170px;
+    height: 126px;
+    background-color: white;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px black;
+    transition: ease-in-out 500ms;
+}
+#map_title{
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    border-radius: 5px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+#mask_background{
+    position: absolute;
+    top:20px;
+    left:192px;
+    height: 48px;
+    background-color: rgba( 0, 0, 0, 0.5 );
+}
+#mask_title{
+    position: absolute;
+    left:212px;
+    top: 20px;
+    width: 205px;
+    height: 100%;
+    overflow: hidden;
+}
+.over{ 
+    transform: translate(205px);
+    animation: slide 10s linear infinite;
+}
+@keyframes slide {
+    0% {transform: translate(0px);}
+	10% {transform: translate(0px);}
+    90% { transform: translate(calc(-100% + 205px)); }
+    100% { transform: translate(calc(-100% + 205px)); }
+}
+
+#map_artist{
+    position: absolute;
+    width: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 214px;
+    top: 68px;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+}
+#map_mapper{
+    position: absolute;
+    left: 214px;
+    top: 94px;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+}
+#map_diff{
+    position:absolute;
+    right: 10px;
+    top: 122px;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+}
+#map_bar{
+    position:absolute;
+    bottom:10px;
+    right:0px;
+    width:240px;
+    height:7px;
+    background-color:rgba( 0, 0, 0, 0.4 );
+}
+#map_star_bar{
+    float:right;
+    width:120px;
+    height:7px;
+    background-color:rgba( 255, 255, 255, 0.5 );
+    transition: ease-in-out 500ms;
+}
+#icon_mask{
+    position: absolute;
+    background-color:darkblue;
+    top: 60px;
+    left: -48px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px black;
+    transform: skew(-8deg) rotate(-90deg);
+    color: white;
+    font-size: 20px;
+}

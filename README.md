@@ -3,7 +3,7 @@
 
 How to use gosumemory : https://github.com/l3lackShark/gosumemory
 
-Made by **2ky (@s2skky)** and thanks to **B-Force (inteliser)** for helping me to make "simple_leaderboard"
+Made by **2ky ([@s2skky](https://twitter.com/s2skky))**.
 
 Special thanks to **riunosk** for polishing up 'README.md'.
 
@@ -15,7 +15,7 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   #### normal mode : 
   
 >  - Customizable Colors and Contents.
->  - Size : FHD->520x240,  QHD -> 700x330
+>  - OBS Size : FHD->520x240,  QHD -> 700x330
 >  
 >  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/62880311/136022486-44d7bde7-0683-42fe-a5db-ef5804919994.gif)
 >
@@ -23,13 +23,10 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   #### simple mode : 
   
 >  - Non-customizable
->  - Size : FHD->280x280,  QHD -> 375x375
+>  - OBS Size : FHD->280x280,  QHD -> 375x375
 >
 >![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/62880311/136022501-cccd83a6-82f3-4bb8-91e1-459e28327c70.gif)
 >
-  #### Features :
->  - This overlay includes a setting program so you can set it up conveniently.
->  - Supports QHD and FHD resolutions.
 </details>
   
 ### simple-leaderboard
@@ -37,13 +34,12 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   
   #### Screenshot:
   
-> - size : FHD->280x1080,  QHD->360x1440
-  
-  ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/62880311/136027869-3c7f2a62-c73f-446e-963f-0e7034ae5ae8.gif)
+> - OBS size : FHD->280x1080,  QHD->360x1440
+> 
+> ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/62880311/136027869-3c7f2a62-c73f-446e-963f-0e7034ae5ae8.gif)
 
   #### Features : 
 > - It predicts your score in real-time and shows your real-time ranking.
-> - 2 themes, with and without avatars.
 > - When the beatmap does not have global leaderboards, local scores will be shown automatically.
 > - To use this overlay you should be osu! APIv1 key and osu! UID.
 > - API Links : https://old.ppy.sh/p/api or http://osu.ppy.sh/p/api 
@@ -51,12 +47,55 @@ Special thanks to **riunosk** for polishing up 'README.md'.
   #### Unsupported :
 > - ScoreV2 mod and unsubmitted/deleted maps.
 > - Some maps may not work for unknown reasons.
+  
+  #### Special Thanks :
+> - **B-Force (inteliser)** : for helping me to make "simple_leaderboard"
+</details>
+
+### simple-hitcount
+<details><summary>Details</summary>
+  
+  #### Screenshot : 
+> - OBS Size : 220x290
+>
+>  ![Animation](https://user-images.githubusercontent.com/62880311/171421519-adb2f980-c034-44a4-9918-c2236aaf980e.gif)
+>
+</details>
+
+### now-playing
+<details><summary>Details</summary>
+  
+  #### Screenshot : 
+> - OBS Size : 540x200
+>
+> ![capture](https://user-images.githubusercontent.com/62880311/171421414-e76b96d4-1012-4996-b53b-06c4a8f0d1d5.png)
+>
+</details>
+
+### simple-hiterror
+<details><summary>Details</summary>
+  
+  #### Screenshot : 
+>
+>  ![Animation2](https://user-images.githubusercontent.com/62880311/171418407-3376073b-492a-4a69-99df-40cb530ea156.gif)
+>
+  #### Reference
+>  - Calculating Tick : [TryZCustomOverlay](https://github.com/FukutoTojido/TryZCustomOverlay) (made by FukutoTojido)
+</details>
+
+### NPS-Chart
+<details><summary>Details</summary>
+  
+  #### Screenshot : 
+> - OBS Size : 400x360
+>
+>  ![Animation](https://user-images.githubusercontent.com/62880311/171416076-b92766ee-d9d8-4262-9fd7-d8168054a8bd.gif)
+>
+  #### Caution :
+>  - ScoreV2 mode is recognized as a note when pressing and releasing LN.
 </details>
 
 ## ChangeLog:
-> #### **2022-06-01*
-> - Inital commit.
-> - Add 3 themes overlay.
 
 > #### **2021-10-05*
 > - Released simple-overlay and simple-leaderboard. 
@@ -67,3 +106,8 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 
 > #### **2021-10-18*
 > - Added option to remove background behind leaderboard in simple-leaderboard.
+
+> #### **2022-06-01*
+> - Inital commit.
+> - Add 3 existing themes overlay.
+> - Add 1 new theme overlay(NPS Chart).

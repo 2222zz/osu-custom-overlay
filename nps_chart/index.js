@@ -21,6 +21,7 @@ let previousNote = [0,0,0,0,0,0];
 let flag = 0;
 let maxNps = 0;
 let isRefresh = false;
+let isFirstStart = false;
 
 function displaySection(){   
     section.style.opacity = 1;
@@ -34,8 +35,26 @@ socket.onmessage = event => {
         let menu = data.menu;
         let play = data.gameplay;
 
-        if(menu.bm.time.current > 0){
+        if(menu.bm.time.current > 0 && menu.state == 2){
             currentTime = data.menu.bm.time.current;
+            isFirstStart = true;
+        }
+        if(menu.bm.time.current <= 0 && menu.state == 2 && isFirstStart){
+            maxNps = 0;
+            currentNote = 0;
+            for(var i=0; i<5; i++)
+                previousNote[i] = 0;
+            option.series[0].data = (function (){
+                currentTime = menu.bm.time.current;
+                var res = [];
+                var len = 100;
+                while (len--) {
+                    res.unshift(currentTime);
+                    currentTime = currentTime - 200;
+                }
+                return res;
+            })();
+            myChart.setOption(option);   
         }
         if (menu.bm.time.current > 0 && currentNote !== play.hits.geki + play.hits[300] + play.hits.katu + play.hits[100] + play.hits[50] + play.hits[0]){
             currentNote = play.hits.geki + play.hits[300] + play.hits.katu + play.hits[100] + play.hits[50] + play.hits[0];
@@ -106,12 +125,13 @@ socket.onmessage = event => {
             myChart.setOption(option);
             
             if(state == 2){
-                setTimeout(displaySection, 1000);
+                setTimeout(displaySection, 1500);
                 maxNps = 0;
             }
             else{
                 section.style.opacity = 0;
                 maxNps = 0;
+                isFirstStart = false;
             }
             
         }
@@ -123,26 +143,10 @@ socket.onmessage = event => {
 setInterval(function (){
     flag += 1;
     var value = 0;
-    if(flag == 1){
-        value = currentNote - previousNote[1];
-        previousNote[1] = currentNote;
-    }
-    else if(flag == 2){
-        value = currentNote - previousNote[2];
-        previousNote[2] = currentNote;
-    }
-    else if(flag == 3){
-        value = currentNote - previousNote[3];
-        previousNote[3] = currentNote;
-    }
-    else if(flag == 4){
-        value = currentNote - previousNote[4];
-        previousNote[4] = currentNote;
-    }
-    else if(flag == 5){
+    value = currentNote - previousNote[flag];
+    previousNote[flag] = currentNote;
+    if(flag == 5){
         flag = 0;
-        value = currentNote - previousNote[5];
-        previousNote[5] = currentNote;
     }
     var axisData = currentTime;
     var data0 = option.series[0].data; 

@@ -95,6 +95,16 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 >  - ScoreV2 mode is recognized as a note when pressing and releasing LN.
 </details>
 
+### Normal Hitcount
+<details><summary>Details</summary>
+  
+  #### Screenshot : 
+> - OBS Size : 230x400
+>
+>  ![image](https://user-images.githubusercontent.com/62880311/182515903-793ff7e5-a838-4548-8a27-b976c753dbb9.png)
+>
+</details>
+
 ## ChangeLog:
 
 > #### **2021-10-05*
@@ -111,3 +121,6 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 > - Inital commit.
 > - Add 3 existing themes overlay.
 > - Add 1 new theme overlay(NPS Chart).
+
+> #### **2022-08-03*
+> - Add new theme overlay(Normal Hitcount).

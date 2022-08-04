@@ -7,6 +7,10 @@ Made by **2ky ([@s2skky](https://twitter.com/s2skky))**.
 
 Special thanks to **riunosk** for polishing up 'README.md'.
 
+
+## How to setting?
+https://youtu.be/XAGthkn75c0
+
 ## Current released theme
 
 ### simple-overlay

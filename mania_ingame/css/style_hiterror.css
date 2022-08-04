@@ -1,0 +1,107 @@
+/*  made by 2ky(@s2skky) */
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#main {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top:30px;
+}
+#bar {
+    position: absolute;
+    left: 20px;
+    width: 300px;
+    height: 0px;
+    
+    background-color: white;
+    transition: ease-in-out 200ms;
+}
+
+#arrow{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: -27.5px;
+    left: 140px;
+    
+    border-style:solid;
+    border-width: 10px;
+    border-color: white transparent transparent transparent;
+    
+    transition: ease-out 100ms;
+    transform-origin: 50% 50%;
+}
+
+#center {
+    position: absolute;
+    top:-11px;
+    left: 147.5px;
+    width: 5px;
+    height: 25px;
+    background-color: red;
+    transition: ease-out 500ms;
+}
+
+#tick0,
+#tick1,
+#tick2,
+#tick3,
+#tick4,
+#tick5,
+#tick6,
+#tick7,
+#tick8,
+#tick9,
+#tick10,
+#tick11,
+#tick12,
+#tick13,
+#tick14,
+#tick15,
+#tick16,
+#tick17,
+#tick18,
+#tick19,
+#tick20,
+#tick21,
+#tick22,
+#tick23,
+#tick24,
+#tick25,
+#tick26,
+#tick27,
+#tick28,
+#tick29{
+    position: absolute;
+    top: -9px;
+    height: 20px;
+    width: 5px;
+    background-color: white;
+    left: 147.5px;
+}
+
+#early{
+    position: absolute;
+    top: -13px;
+    left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    color: #B3D7FF;
+    transition: ease-out 500ms;
+}
+#late{
+    position: absolute;
+    top: -13px;
+    right: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    color: #FFB3B3;
+    transition: ease-out 500ms;
+}

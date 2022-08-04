@@ -105,6 +105,16 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 >
 </details>
 
+### mania ingame (hiterror + hitcount)
+<details><summary>Details</summary>
+  
+  #### Screenshot : 
+> - init ingame size : 380x500 (you must adjust size)
+>
+>  ![image](https://user-images.githubusercontent.com/62880311/182748095-1fd6eb81-6ce2-48de-a771-15dd6499cf54.png)
+>
+</details>
+
 ## ChangeLog:
 
 > #### **2021-10-05*
@@ -124,3 +134,6 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 
 > #### **2022-08-03*
 > - Add new theme overlay(Normal Hitcount).
+
+> #### **2022-08-04*
+> - Add ingame overlay.

@@ -82,8 +82,10 @@ https://youtu.be/XAGthkn75c0
   #### Screenshot : 
 >
 >  ![Animation2](https://user-images.githubusercontent.com/62880311/171418407-3376073b-492a-4a69-99df-40cb530ea156.gif)
+>
 >  ![GIF 2022-10-15 오후 7-06-36](https://user-images.githubusercontent.com/62880311/195980722-96270dfd-6c3c-42f0-bc8f-13899acf1463.gif)
 >
+>  - It's not perfect color matching because of LN press&release issue.
   #### Reference
 >  - Calculating Tick : [TryZCustomOverlay](https://github.com/FukutoTojido/TryZCustomOverlay) (made by FukutoTojido)
 </details>

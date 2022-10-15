@@ -76,12 +76,13 @@ https://youtu.be/XAGthkn75c0
 >
 </details>
 
-### simple-hiterror
+### simple-hiterror (normal & colorful)
 <details><summary>Details</summary>
   
   #### Screenshot : 
 >
 >  ![Animation2](https://user-images.githubusercontent.com/62880311/171418407-3376073b-492a-4a69-99df-40cb530ea156.gif)
+>  ![GIF 2022-10-15 오후 7-06-36](https://user-images.githubusercontent.com/62880311/195980722-96270dfd-6c3c-42f0-bc8f-13899acf1463.gif)
 >
   #### Reference
 >  - Calculating Tick : [TryZCustomOverlay](https://github.com/FukutoTojido/TryZCustomOverlay) (made by FukutoTojido)
@@ -141,3 +142,6 @@ https://youtu.be/XAGthkn75c0
 
 > #### **2022-08-04*
 > - Add ingame overlay.
+
+> #### **2022-10-15*
+> - Add simple_hiterror colorful.

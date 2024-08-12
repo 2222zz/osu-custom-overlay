@@ -2,7 +2,8 @@
 **This is made to be used in mania, and it may not work on other modes.**
 
 ※ gosumemory is no longer updated. (official discord announce) so, change program to **tosu**(made by KotRikD). This is very similar to gosumemory.
-How to use tosu : [https://github.com/l3lackShark/gosumemory](https://github.com/KotRikD/tosu)
+
+How to use tosu : https://github.com/KotRikD/tosu
 
 Made by **2ky ([@s2skky](https://twitter.com/s2skky))**.
 

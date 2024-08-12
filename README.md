@@ -130,7 +130,7 @@ https://youtu.be/XAGthkn75c0 (gosumemory)
   #### Screenshot : 
 > - OBS size : 430x550
 > - must using KotRikD / tosu program (no adapt gosumemory)
-> - **There are 2 custom options. Check config.js file.** 
+> - ${\textsf{\color{magenta}There are 2 custom options. Check config.js file.}}$ 
 >
 >  ![GIF 2024-08-13 오전 12-25-59](https://github.com/user-attachments/assets/6098a99e-94c5-4b78-bc10-2054f83d174a)
 >
@@ -142,7 +142,7 @@ https://youtu.be/XAGthkn75c0 (gosumemory)
   #### Screenshot : 
 > - OBS size : 910x150
 > - must using KotRikD / tosu program (no adapt gosumemory)
-> - **There are 2 custom options. Check config.js file.** 
+> - ${\textsf{\color{magenta}There are 2 custom options. Check config.js file.}}$ 
 >
 >  ![GIF 2024-08-13 오전 12-28-02](https://github.com/user-attachments/assets/55b8ccbf-2583-466f-b4d3-b310b59f137e)
 >

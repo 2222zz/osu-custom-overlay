@@ -1,0 +1,416 @@
+/* made by sky(@s2skky) */
+
+@font-face {
+    font-family: "TOMMY";
+    src: url("../fonts/MADETOMMY.otf");
+}
+.odometer.odometer-auto-theme {
+    font-family: "GothicB", Helvetica, sans-serif !important;
+    font-weight: 900px !important;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.trans{
+    transition: color 1s ease;
+}
+
+#main{
+    width: 430px;
+    height: 550px;
+}
+
+
+#npBar{
+    width: 430px;
+    height: 550px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+
+#background_blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 30px;
+    filter: blur(35px);
+    transform: scale(1.3);
+}
+
+
+#background_filter{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+
+
+#beatmap_img{
+    position:absolute;
+    width: 170px;
+    height: 170px;
+    top : 63px;
+    right: -60px;
+    object-fit: cover;
+    border-radius: 70%;
+
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#disk{
+    position: absolute;
+    right: -140px;
+    top: -10px;
+    width: 320px;
+    height: 320px;
+}
+#title{
+    position: absolute;
+    font-family: TOMMY;
+    font-size: 32pt;
+    font-weight: 100;
+    color: white;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+#title_mask{
+    position:absolute;
+    top: 70px;
+    left: 30px;
+    width: 220px;
+    height:100%;
+    overflow: hidden;
+}
+.over{ 
+    transform: translate(220px);
+    animation: slide 10s linear infinite;
+}
+@keyframes slide {
+    0% {transform: translate(0px);}
+	10% {transform: translate(0px);}
+    90% { transform: translate(calc(-100% + 220px)); }
+    100% { transform: translate(calc(-100% + 220px)); }
+}
+
+#artist{
+    position: absolute;
+    font-family: TOMMY;
+    font-size: 20pt;
+    font-weight: 100;
+    color: rgba(255,255,255,0.7);
+    white-space: nowrap;
+    overflow:hidden;
+    text-align: center;
+}
+#artistMask{
+    position: absolute;
+    top: 140px;
+    left : 30px;
+    width: 180px;
+    height:100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.over2{ 
+    transform: translate(180px);
+    animation: slide 10s linear infinite;
+}
+@keyframes slide2 {
+    0% {transform: translate(0px);}
+	10% {transform: translate(0px);}
+    90% { transform: translate(calc(-100% + 180px)); }
+    100% { transform: translate(calc(-100% + 180px)); }
+}
+
+#control_button{
+    position: absolute;
+    top: 235px;
+    left: 45px;
+    width: 220px;
+    height: 50px;
+}
+
+#previous_btn{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    opacity: 0.35;
+}
+
+#play_btn{
+    position: absolute;
+    left: 70px;
+    top:-18px;
+    width: 76px;
+    height: 76px;
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play_icon{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+#next_btn{
+    position: absolute;
+    left: 170px;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    opacity: 0.35;
+}
+
+#pgrsBarBg{
+    position: absolute;
+    top: 330px;
+    left: 35px;
+    width: 360px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.35);
+}
+#pgrsBar{
+    position: absolute;
+    top: 330px;
+    left: 35px;
+    width: 0px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,1);
+}
+#pgrsBarCircle{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 322px;
+    left:22.5px;
+    border-radius: 100px;
+    background-color: white
+}
+#sTime{
+    position: absolute;
+    top: 345px;
+    left : 32px;
+    font-family: GothicB;
+    font-size: 18pt;
+    font-weight: bold;
+    font-stretch: expanded;
+    color: rgba(255,255,255,0.7);
+}
+#eTime{
+    position: absolute;
+    top: 345px;
+    right : 32px;
+    font-family: GothicB;
+    font-size: 18pt;
+    font-weight: bold;
+    font-stretch: expanded;
+    color: rgba(255,255,255,0.7);
+}
+
+
+#subArea{
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.6);
+    /*transform: translateY(300px);*/
+}
+#urGroup{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#totalNoteGroup{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#subcontentText{
+    margin-left: 30px;
+    margin-right: 60px;
+    font-family: TOMMY;
+    font-size: 20pt;
+    color: rgba(255,255,255,0.7);
+}
+#totalNoteText{
+    margin-left: 30px;
+    font-family: TOMMY;
+    font-size: 20pt;
+    color: rgba(255,255,255,0.7);
+}
+#ur{
+    margin-left: auto;
+    margin-right: 30px;;
+    font-family: TOMMY;
+    font-size: 23pt;
+    float: right;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#totalNote{
+    margin-left: auto;
+    margin-right: 30px;;
+    font-family: TOMMY;
+    font-size: 23pt;
+    text-align: right;
+    color: white
+}
+
+#subArea2{
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(300px);
+}
+
+.subArea2Group{
+    width: 100%;
+    text-align: center;
+}
+.subArea2Text{
+    font-family: TOMMY;
+    font-size: 18pt;
+    color: rgba(255,255,255,0.7);
+}
+.dash{
+    background-color: rgba(255,255,255,0.7);
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    height: 4px;
+}
+
+#bpmDash{
+    box-shadow: 0 0 3rem rgba(255, 0, 0, 1),0 0 0.8rem rgba(255, 0, 0, 1),0 0 2.8rem rgba(255, 0, 0, 1), inset 0 0 1.3rem rgba(255, 0, 0, 1);
+}
+#odDash{
+    box-shadow: 0 0 3rem rgba(251, 255, 0, 1),0 0 0.8rem rgba(251, 255, 0, 1),0 0 2.8rem rgba(251, 255, 0, 1), inset 0 0 1.3rem rgba(251, 255, 0, 1);
+}
+#hpDash{
+    box-shadow: 0 0 3rem rgba(21, 255, 0, 1),0 0 0.8rem rgba(21, 255, 0, 1),0 0 2.8rem rgba(21, 255, 0, 1), inset 0 0 1.3rem rgba(21, 255, 0, 1);
+}
+#srDash{
+    box-shadow: 0 0 3rem rgba(0, 132, 255, 1),0 0 0.8rem rgba(0, 132, 255, 1),0 0 2.8rem rgba(0, 132, 255, 1), inset 0 0 1.3rem rgba(0, 132, 255, 1);
+}
+
+#bpm, #od, #hp, #sr{
+    margin-top: 11px;
+    font-family: TOMMY;
+    font-size: 25pt;
+    color: white;
+}
+
+#loadingBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 30px;
+    background-image: url('../parts/loadingbg.jpg');
+    justify-content: center;
+
+    transition: all 1s ease-out;
+}
+
+#loading{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+#loadingBar{
+    width: 300px;
+    height: 15px;
+    border: 3px solid rgb(179, 179, 179);
+    border-radius: 100px;
+}
+
+#loadingBarGauge{
+    width: 0;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgb(179, 179, 179);
+    transition: all 1.5s ease-in-out;
+}
+
+#made{
+    font-family: TOMMY;
+    color: rgba(255,255,255,0.8);
+    font-size: 25pt;
+
+    align-items: end;
+    height: 40%;
+}
+
+#loadingText{
+    font-family: TOMMY;
+    color: rgba(255,255,255,0.8);
+    font-size: 25pt;
+
+    align-items: start;
+    height: 40%;
+}
+
+.loadingArea{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}

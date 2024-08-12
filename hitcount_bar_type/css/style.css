@@ -1,0 +1,26 @@
+/* made by sky(@s2skky) */
+
+@font-face {
+    font-family: "TOMMY";
+    src: url("../fonts/MADETOMMY.otf");
+}
+.odometer.odometer-auto-theme {
+    font-family: "GothicB", Helvetica, sans-serif !important;
+    font-weight: 900px !important;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.trans{
+    transition: color 1s ease;
+}
+
+#main{
+    width: 910px;
+    height: 150px;
+}

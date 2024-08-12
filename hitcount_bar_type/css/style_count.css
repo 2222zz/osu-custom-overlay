@@ -1,0 +1,133 @@
+/* made by sky(@s2skky) */
+
+@font-face {
+    font-family: "TOMMY";
+    src: url("../fonts/MADETOMMY.otf");
+}
+.odometer.odometer-auto-theme {
+    font-family: "GothicB", Helvetica, sans-serif !important;
+    font-weight: 900px !important;
+}
+
+
+#cntArea{
+    position: absolute;
+    width: 910px;
+    height: 150px;
+
+    overflow: hidden;
+}
+#cntAreaBg{
+    width: 100%;
+    height: 100%;
+
+    padding-top: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    
+}
+#ppArea{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+#hitArea{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cntGrp{
+    width: 100%;
+}
+.cntDash{
+    height: 8px;
+    border-radius: 15px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: rgba(255,255,255,0.7);
+}
+.cntText{
+    margin-top : 10px;
+    margin-left: 10px;
+    font-family: TOMMY;
+    font-size: 15pt;
+    color: rgba(255, 162, 250, 0.8);
+}
+
+
+#gekiDash{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem azure,0 0 0.5rem azure,0 0 0.7rem azure, inset 0 0 0.8rem azure;
+}
+#hit300Dash{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem orange,0 0 0.5rem orange,0 0 0.7rem orange, inset 0 0 0.8rem orange;
+}
+#katuDash{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem forestgreen,0 0 0.5rem forestgreen,0 0 0.7rem forestgreen, inset 0 0 0.8rem forestgreen;
+}
+#hit100Dash{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem dodgerblue,0 0 0.5rem dodgerblue,0 0 0.7rem dodgerblue, inset 0 0 0.8rem dodgerblue;
+}
+#hit50Dash{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem hotpink,0 0 0.5rem hotpink,0 0 0.7rem hotpink, inset 0 0 0.8rem hotpink;
+}
+#hit0Dash{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem crimson,0 0 0.5rem crimson,0 0 0.7rem crimson, inset 0 0 0.8rem crimson;
+}
+
+
+
+#geki, #hit300, #katu, #hit100, #hit50, #hit0, #pp{
+    margin-top : 9px;
+    margin-left: 10px;
+    font-family: TOMMY;
+    font-weight: bold;
+    font-size: 23pt;
+    color: white;
+}
+
+#ppLeftGrp{
+    width: 54%;
+}
+#ppRightGrp{
+    width: 46%;
+}
+
+#ppDashGrp{
+    display: flex;
+    align-items: center;
+}
+#ppDash{
+    width: 100%;
+    margin-left: 0;
+}
+#ppText{
+    margin-left: 5px;
+    white-space: nowrap;
+}
+#pp{
+    float: right;
+    margin-top: 8px;
+    margin-right: 18px;
+    font-size: 21pt;
+    white-space: nowrap;
+}
+
+
+

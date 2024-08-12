@@ -1,0 +1,6 @@
+Usecase: obs-overlay
+Name: now_playing_disk_ver
+Author: sky
+CompatibleWith: tosu
+Resolution: 430x550
+authorLinks: https://github.com/2222zz/gosumemory-theme

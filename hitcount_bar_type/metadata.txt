@@ -1,0 +1,6 @@
+Usecase: obs-overlay
+Name: hitcount_bar_type
+Author: sky
+CompatibleWith: tosu
+Resolution: 2560x1440
+authorLinks: https://github.com/2222zz/gosumemory-theme

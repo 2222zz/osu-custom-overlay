@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>yep 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" id="style">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="npBar">
+            <div id="background_blur"><div id="background_filter"></div></div>
+            <img id="disk" src="./parts/disk.png">
+            <img id="beatmap_img"/>
+            <div id="title_mask">
+                <div id="title"></div>
+            </div>
+            <div id="artistMask">
+                <div id="artist"></div>
+            </div>
+            <div id="control_button">
+                <img id="previous_btn" src="./parts/previous.png">
+                <div id="play_btn">
+                    <img id="play_icon" src="./parts/pause.png">
+                </div>
+                <img id="next_btn" src="./parts/next.png">
+            </div>
+            <div id="pgrsBarBg"></div>
+            <div id="pgrsBar"></div>
+            <div id="pgrsBarCircle"></div>
+            <div id="sTime">00:00</div>
+            <div id="eTime">00:00</div>
+            <div id="subArea">
+                <div id="urGroup">
+                    <div id="subcontentText">UnstableRate</div><div id="ur"></div>
+                </div>
+                <div id="totalNoteGroup">
+                    <div id="totalNoteText">Remain</div><div id="totalNote"></div>
+                </div>
+            </div>
+            <div id="subArea2">
+                <div class="subArea2Group">
+                    <div class="dash" id="bpmDash"></div><div class="subArea2Text">BPM</div><div id="bpm"></div>
+                </div>
+                <div class="subArea2Group">
+                    <div class="dash" id="odDash"></div><div class="subArea2Text">OD</div><div id="od"></div>
+                </div>
+                <div class="subArea2Group">
+                    <div class="dash" id="hpDash"></div><div class="subArea2Text">HP</div><div id="hp"></div>
+                </div>
+                <div class="subArea2Group">
+                    <div class="dash" id="srDash"></div><div class="subArea2Text">SR</div><div id="sr"></div>
+                </div>
+            </div>
+            <div id="loadingBg">
+                <div id="loading">
+                    <div class="loadingArea" id="made">made by&nbsp;&nbsp;<span style="color: rgba(162, 213, 255, 0.8); font-size: 28pt;">sssskky</span></div>
+                    <div class="loadingArea">
+                        <div id="loadingBar">
+                            <div id="loadingBarGauge"></div>
+                        </div>
+                    </div>
+                    <div class="loadingArea" id="loadingText">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="deps/countUp.js"></script>
+  <script src="config.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>

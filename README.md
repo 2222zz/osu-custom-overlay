@@ -1,7 +1,8 @@
-# CustomOverlay in gousumemory
+# CustomOverlay in gousumemory, tosu
 **This is made to be used in mania, and it may not work on other modes.**
 
-How to use gosumemory : https://github.com/l3lackShark/gosumemory
+※ gosumemory is no longer updated. (official discord announce) so, change program to **tosu**(made by KotRikD). This is very similar to gosumemory.
+How to use tosu : [https://github.com/l3lackShark/gosumemory](https://github.com/KotRikD/tosu)
 
 Made by **2ky ([@s2skky](https://twitter.com/s2skky))**.
 
@@ -9,7 +10,7 @@ Special thanks to **riunosk** for polishing up 'README.md'.
 
 
 ## How to setting?
-https://youtu.be/XAGthkn75c0
+https://youtu.be/XAGthkn75c0 (gosumemory)
 
 ## Current released theme
 

@@ -15,7 +15,7 @@ socket.onerror = error => {
 
 
 let tick = [];
-for (var t = 0; t < 30; t++) {
+for (var t = 0; t < 100; t++) {
     tick[t] = document.querySelectorAll("[id^=tick]")[t];
 }
 
@@ -53,10 +53,13 @@ let curPP;
 
 let tempHitErrorArrayLength;
 let OD = 0;
-let tickPos;
+let tickPos = [];
 let fullPos;
 let tempAvg;
 let tempSmooth;
+let currentErrorValue = [];
+let preHitErrorArrayLength = 0;
+let hitErrorArrayPos = [];
 
 if(hitcount_switch == false){ hitcountBox.style.display = 'none';}
 if(hiterror_switch == false){ bar.style.display = 'none';}
@@ -73,11 +76,11 @@ socket.onmessage = event => {
     if (state !== menu.state) {
         state = menu.state;
         if (state !== 2) {
-            for (var y = 0; y < 30; y++) {
+            for (var y = 0; y < 100; y++) {
                 tick[y].style.transform = "translateX(0)";
                 tick[y].style.opacity = 0;
             }
-            tickPos = 0;
+            tickPos = [];
             tempAvg = 0;
             arrow.style.transform = "translateX(0)";  
             bar.style.opacity = 0;
@@ -85,6 +88,12 @@ socket.onmessage = event => {
             late.style.opacity = 0;
             hitcountBox.style.opacity = 0;
         } else {
+            tickPos = [];
+            currentErrorValue = [];
+            hitErrorArrayPos = [];
+            preHitErrorArrayLength = 0;
+            tempHitErrorArrayLength = 0;
+
             bar.style.opacity = 1;
             early.style.opacity = 1;
             late.style.opacity = 1;
@@ -97,7 +106,7 @@ socket.onmessage = event => {
         }
     }
     if (data.gameplay.hits.unstableRate == 0) {
-        for (var y = 0; y < 30; y++) {
+        for (var y = 0; y < 100; y++) {
             tick[y].style.transform = "translateX(0)";
             tick[y].style.opacity = 0;
         }
@@ -114,13 +123,29 @@ socket.onmessage = event => {
         OD = data.menu.bm.stats.memoryOD;
         cur_combo = data.gameplay.combo.current;
         tempSmooth = smooth(data.gameplay.hits.hitErrorArray, 4);
+
         if (tempHitErrorArrayLength !== tempSmooth.length) {
+            preHitErrorArrayLength = tempHitErrorArrayLength;
             tempHitErrorArrayLength = tempSmooth.length;
+            tickPos = [];
+            currentErrorValue = [];
+            hitErrorArrayPos = [];
+
             for (var a = 0; a < tempHitErrorArrayLength; a++) {
                 tempAvg = tempAvg * 0.90 + tempSmooth[a] * 0.1;
             }
             fullPos = (-10 * OD + 199.5);
-            tickPos = data.gameplay.hits.hitErrorArray[tempHitErrorArrayLength - 1] / fullPos * 145;
+
+            // push hitErrorValue
+            for(var b = preHitErrorArrayLength; b < tempHitErrorArrayLength; b++){
+                tickPos.push((data.gameplay.hits.hitErrorArray[b] / fullPos * 145));
+                currentErrorValue.push((data.gameplay.hits.hitErrorArray[b]));
+                hitErrorArrayPos.push(b);
+            }
+            //tickPos = data.gameplay.hits.hitErrorArray[tempHitErrorArrayLength - 1] / fullPos * 145;
+            //currentErrorValue = data.gameplay.hits.hitErrorArray[tempHitErrorArrayLength - 1];
+
+            // s: adjust arrow
             arrow.style.transform = `translateX(${(tempAvg / fullPos) * 150}px)`;
             if((tempAvg / fullPos) * 150 > 2.5){
                 arrow.style.borderColor = "#FF4040 transparent transparent transparent"
@@ -131,19 +156,19 @@ socket.onmessage = event => {
             else{
                 arrow.style.borderColor = "white transparent transparent transparent"
             }
-            for (var c = 0; c < 30; c++) {
-                if ((tempHitErrorArrayLength % 30) == ((c + 1) % 30)) {
-                    tick[c].style.opacity = 1;
-                    tick[c].style.transform = `translateX(${tickPos}px)`;
-                    var s = document.querySelectorAll("[id^=tick]")[c].style;
-                    s.opacity = 1;
-                    (function fade() {
-                        (s.opacity -= .05) < 0 ? s.opacity = 0 : setTimeout(fade, 125)
-                    })();
-                }
+            // e: adjst arrow
+
+            for(var c = 0; c < hitErrorArrayPos.length; c++){
+                var curTickPos = hitErrorArrayPos[c] % 100;
+                tick[curTickPos].style.opacity = 1;
+                tick[curTickPos].style.transform = `translateX(${tickPos[c]}px)`;
+                $("#tick" + curTickPos).stop().animate({opacity : 0}, 1200);
+
             }
         }
     }
+
+    
     if (curPP !== play.pp.current){
         curPP = play.pp.current;
         pp.innerHTML = curPP + 'pp';

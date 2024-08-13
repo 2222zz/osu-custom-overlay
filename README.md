@@ -150,6 +150,10 @@ https://youtu.be/XAGthkn75c0 (gosumemory)
 
 ## ChangeLog:
 
+> #### **2024-08-14*
+> - Fixed output bugs for concurrent notes in all hiterror overlay.
+> - Modify vanishing effect smoother in hiterror tick.
+
 > #### **2024-08-13*
 > - Released 2 new overlays (mania hitcount bar type, now playing disk version)
 

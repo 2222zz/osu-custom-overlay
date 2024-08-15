@@ -153,12 +153,12 @@ socket.api_v2(({ state, settings, session, profile, performance, resultsScreen, 
         console.log(directPath.beatmapBackground);
         console.log(background_path);
     
-        background.src = `http://127.0.0.1:24050/Songs${background_path_div}`;
-        background_bar.style.backgroundImage = `url('http://127.0.0.1:24050/Songs${background_path_div}')`;
+        background.src = `http://127.0.0.1:24050/Songs/${background_path_div}`;
+        background_bar.style.backgroundImage = `url('http://127.0.0.1:24050/Songs/${background_path_div}')`;
     
     
         const image = new Image();
-        image.src = `http://127.0.0.1:24050/Songs${background_path_div}`;
+        image.src = `http://127.0.0.1:24050/Songs/${background_path_div}`;
 
         // image.onerror = () => document.querySelector('.backgroundLoadError').classList.add('active');
         // image.onload = () => document.querySelector('.backgroundLoadError').classList.remove('active');
